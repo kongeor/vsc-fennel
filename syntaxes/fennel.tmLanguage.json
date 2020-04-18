@@ -99,12 +99,20 @@
 			"patterns": [
 				{
 					"name": "keyword.special.fennel",
-					"match": "\\b(\\#|\\%|\\*|\\+|\\-|\\->|\\-\\>\\>|\\-\\?\\>|\\-\\?\\>\\>|\\.|\\.\\.|\\/|\\/\\/|//:|//<|//<//=|//=)\\b"
+					"match": "\\#|\\%|\\+|\\*|(\\.)?\\.|(\\/)?\\/|:"
 				},
 				{
 					"name": "keyword.special.fennel",
 					"match": "((\\-)?(\\-)?(\\>)|>|var)"
-				}
+				},
+				{ "name": "keyword.special.fennel", "match": "not=" },
+				{ "name": "keyword.special.fennel", "match": "set-forcibly!" },
+				{
+					"name": "keyword.special.fennel",
+					"match": "\\b(and|comment|do|doc|doto|each|eval-compiler|fn|for|global|hashfn|if|include|lambda|length|let|local|lua|macro|macros|match|not=?|or|partial|quote|require-macros|set|tset|values|var|when|while)\\b"
+				},
+				{ "name": "keyword.special.fennel", "match": "~=" },
+				{ "name": "keyword.special.fennel", "match": "λ" }
 		]
 		},
 		"strings": {
