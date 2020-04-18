@@ -1,0 +1,123 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Fennel",
+	"patterns": [
+		{
+			"include": "#expression"
+		}
+	],
+	"repository": {
+		"expression": {
+			"patterns": [
+				{
+					"include": "#comment"
+				},
+				{
+					"include": "#constants"
+				},
+				{
+					"include": "#sexp"
+				},
+				{
+					"include": "#table"
+				},
+				{
+					"include": "#vector"
+				},
+				{
+					"include": "#special"
+				},
+				{
+					"include": "#strings"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"match": "nil",
+					"name": "constant.language.nil.fennel"
+				},
+				{
+					"match": "false|true",
+					"name": "constant.language.boolean.fennel"
+				},
+				{
+					"match": "(-?\\d+\\.\\d+([eE][+-]?\\d+)?)",
+					"name": "constant.numeric.double.clojure"
+				},
+				{
+					"match": "(-?\\d+)",
+					"name": "constant.numeric.integer.clojure"
+				}
+			]
+		},
+		"comment": {
+			"patterns": [{
+				"name": "comment.line.semicolon.fennel",
+				"begin": ";",
+				"end": "$"
+			}]
+		},
+		"sexp": {
+			"begin": "\\(",
+			"end": "\\)",
+			"beginCaptures": {
+				"0": { "name": "punctuation.paren.open.fennel"}
+			},
+			"endCaptures": {
+				"0": { "name": "punctuation.paren.close.fennel"}
+			},
+			"name": "sexp.fennel",
+			"patterns": [{ "include": "#expression" }]
+		},
+		"table": {
+			"begin": "\\{",
+			"end": "\\}",
+			"beginCaptures": {
+				"0": { "name": "punctuation.table.bracket.open.fennel"}
+			},
+			"endCaptures": {
+				"0": { "name": "punctuation.table.bracket.close.fennel"}
+			},
+			"name": "table.fennel",
+			"patterns": [{ "include": "#expression" }]
+		},
+		"vector": {
+			"begin": "\\[",
+			"end": "\\]",
+			"beginCaptures": {
+				"0": { "name": "punctuation.vector.bracket.open.fennel"}
+			},
+			"endCaptures": {
+				"0": { "name": "punctuation.vector.bracket.close.fennel"}
+			},
+			"name": "meta.vector.fennel",
+			"patterns": [{ "include": "#expression" }]
+		},
+		"special": {
+			"patterns": [
+				{
+					"name": "keyword.special.fennel",
+					"match": "\\b(\\#|\\%|\\*|\\+|\\-|\\->|\\-\\>\\>|\\-\\?\\>|\\-\\?\\>\\>|\\.|\\.\\.|\\/|\\/\\/|//:|//<|//<//=|//=)\\b"
+				},
+				{
+					"name": "keyword.special.fennel",
+					"match": "((\\-)?(\\-)?(\\>)|>|var)"
+				}
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.fennel",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.fennel",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.fnl"
+}

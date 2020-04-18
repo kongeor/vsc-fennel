@@ -1,0 +1,25 @@
+{
+    "name": "vsc-fennel",
+    "displayName": "Fennel",
+    "description": "VS Code Fennel support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fennel",
+            "aliases": ["Fennel", "fennel"],
+            "extensions": [".fnl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fennel",
+            "scopeName": "source.fnl",
+            "path": "./syntaxes/fennel.tmLanguage.json"
+        }]
+    }
+}
