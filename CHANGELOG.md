@@ -6,4 +6,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release
+## [0.0.1] - 2020-04-19
+### Added
+- Initial release - syntax support
