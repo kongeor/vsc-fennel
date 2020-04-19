@@ -56,11 +56,11 @@
 				},
 				{
 					"match": "(-?\\d+\\.\\d+([eE][+-]?\\d+)?)",
-					"name": "constant.numeric.double.clojure"
+					"name": "constant.numeric.double.fennel"
 				},
 				{
 					"match": "(-?\\d+)",
-					"name": "constant.numeric.integer.clojure"
+					"name": "constant.numeric.integer.fennel"
 				}
 			]
 		},
