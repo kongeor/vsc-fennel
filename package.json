@@ -3,6 +3,7 @@
     "displayName": "Fennel",
     "description": "VS Code Fennel support",
     "version": "0.0.1",
+    "publisher": "kongeor",
     "engines": {
         "vscode": "^1.44.0"
     },
