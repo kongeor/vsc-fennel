@@ -185,7 +185,7 @@
 					"match": "\\w+(?:\\.\\w+)+"
 				},
 				{
-					"name": "constant.symbol.fennel",
+					"name": "variable.other.fennel",
 					"match": "\\w+"
 				}
 			]
