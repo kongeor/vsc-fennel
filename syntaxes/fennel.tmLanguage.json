@@ -143,7 +143,7 @@
 			"patterns": [
 				{
 					"name": "support.function.fennel",
-					"match": "\\b(assert|collectgarbage|dofile|error|getmetatable|ipairs|load|loadfile|next|pairs|pcall|print|rawequal|rawget|rawlen|rawset|require|select|setmetatable|tonumber|tostring|type|xpcall\\b"
+					"match": "\\b(assert|collectgarbage|dofile|error|getmetatable|ipairs|load|loadfile|next|pairs|pcall|print|rawequal|rawget|rawlen|rawset|require|select|setmetatable|tonumber|tostring|type|xpcall)\\b"
 				},
 				{
 					"name": "support.function.library.fennel",
