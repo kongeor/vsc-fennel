@@ -2,7 +2,7 @@
     "name": "vsc-fennel",
     "displayName": "Fennel",
     "description": "VS Code Fennel support",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "kongeor",
     "engines": {
         "vscode": "^1.44.0"
@@ -15,16 +15,25 @@
         "url": "https://github.com/kongeor/vsc-fennel"
     },
     "contributes": {
-        "languages": [{
-            "id": "fennel",
-            "aliases": ["Fennel", "fennel"],
-            "extensions": [".fnl"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "fennel",
-            "scopeName": "source.fnl",
-            "path": "./syntaxes/fennel.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "fennel",
+                "aliases": [
+                    "Fennel",
+                    "fennel"
+                ],
+                "extensions": [
+                    ".fnl"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "fennel",
+                "scopeName": "source.fnl",
+                "path": "./syntaxes/fennel.tmLanguage.json"
+            }
+        ]
     }
 }
