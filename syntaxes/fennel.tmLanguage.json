@@ -111,7 +111,7 @@
 			"patterns": [
 				{
 					"name": "keyword.special.fennel",
-					"match": "\\#|\\%|\\+|\\*|(\\.)?\\.|(\\/)?\\/|:|<=?|=|>=?|\\^"
+					"match": "\\#|\\%|\\+|\\*|[?][.]|(\\.)?\\.|(\\/)?\\/|:|<=?|=|>=?|\\^"
 				},
 				{
 					"name": "keyword.special.fennel",
@@ -129,7 +129,7 @@
 				{ "name": "keyword.special.fennel", "match": "set-forcibly!" },
 				{
 					"name": "keyword.special.fennel",
-					"match": "\\b(and|comment|do|doc|doto|each|eval-compiler|for|global|hashfn|if|include|lambda|length|let|local|lua|macro|macros|match|not=?|or|partial|quote|require-macros|set|tset|values|var|when|while)\\b"
+					"match": "\\b(and|band|bnot|bor|bxor|collect|comment|do|doc|doto|each|eval-compiler|for|global|hashfn|icollect|if|import-macros|include|lambda|length|let|local|lshift|lua|macro|macrodebug|macros|match|not=?|or|partial|pick-args|pick-values|quote|require-macros|rshift|set|tset|values|var|when|while|with-open)\\b"
 				},
 				{
 					"name": "keyword.control.fennel",
