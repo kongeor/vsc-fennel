@@ -5,12 +5,14 @@ All notable changes to the "vsc-fennel" extension will be documented in this fil
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## [Unreleased]
+
+## [0.1.3] - 2021-05-15
 ### Added
-* macros: pick-args,pick-values,import-macros,macrodebug (fennel 0.4.0)
-* bitop specials: band,bnot,bor,bxor,lshift,rshift (fennel 0.4.0)
-* macro: with-open (fennel 0.4.2)
-* macros: collect,icollect (fennel 0.8.0)
-* macro: ?. (fennel 0.9.0)
+- macros: pick-args,pick-values,import-macros,macrodebug (fennel 0.4.0)
+- bitop specials: band,bnot,bor,bxor,lshift,rshift (fennel 0.4.0)
+- macro: with-open (fennel 0.4.2)
+- macros: collect,icollect (fennel 0.8.0)
+- macro: ?. (fennel 0.9.0)
 
 ## [0.1.1] - 2021-01-17
 ### Fixed
