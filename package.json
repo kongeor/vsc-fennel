@@ -2,7 +2,7 @@
     "name": "vsc-fennel",
     "displayName": "Fennel",
     "description": "VS Code Fennel support",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "kongeor",
     "engines": {
         "vscode": "^1.44.0"
