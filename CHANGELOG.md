@@ -5,6 +5,8 @@ All notable changes to the "vsc-fennel" extension will be documented in this fil
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## [Unreleased]
+### Added
+- MIT license
 
 ## [0.1.3] - 2021-05-15
 ### Added
